@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTVMediaEdit", "BTVMediaEdit\BTVMediaEdit.csproj", "{F95DA500-511F-4752-94C8-BAB8A989AE34}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BTVMediaEditSetup", "BTVMediaEditSetup\BTVMediaEditSetup.vdproj", "{3E35F985-133C-4561-8B4B-5941373EAEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F95DA500-511F-4752-94C8-BAB8A989AE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95DA500-511F-4752-94C8-BAB8A989AE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95DA500-511F-4752-94C8-BAB8A989AE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95DA500-511F-4752-94C8-BAB8A989AE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E35F985-133C-4561-8B4B-5941373EAEEC}.Debug|Any CPU.ActiveCfg = Debug
+		{3E35F985-133C-4561-8B4B-5941373EAEEC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

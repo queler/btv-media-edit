@@ -1,0 +1,10 @@
+Debug
+Release
+bin
+obj
+
+syntax: glob
+*.suo
+*.swp
+*.user
+
