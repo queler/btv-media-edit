@@ -66,10 +66,10 @@ namespace BTVMediaEdit
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.startWithWindowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startMinimizedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.gbMediaFolders = new System.Windows.Forms.GroupBox();
@@ -239,13 +239,6 @@ namespace BTVMediaEdit
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.optionsToolStripMenuItem.Text = "Edit";
             // 
-            // moviesToolStripMenuItem
-            // 
-            this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
-            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.moviesToolStripMenuItem.Text = "Movies...";
-            this.moviesToolStripMenuItem.Click += new System.EventHandler(this.moviesToolStripMenuItem_Click);
-            // 
             // optionsToolStripMenuItem1
             // 
             this.optionsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -268,6 +261,13 @@ namespace BTVMediaEdit
             this.startMinimizedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.startMinimizedToolStripMenuItem.Text = "Start Minimized";
             this.startMinimizedToolStripMenuItem.Click += new System.EventHandler(this.startMinimizedToolStripMenuItem_Click);
+            // 
+            // moviesToolStripMenuItem
+            // 
+            this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
+            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.moviesToolStripMenuItem.Text = "Movies...";
+            this.moviesToolStripMenuItem.Click += new System.EventHandler(this.moviesToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
