@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -305,7 +306,10 @@ namespace BTVMediaEdit
                     if (selIndex >= 0)
                     {
                         MovieDbMovie movie = searchMovies[selIndex];
-                        mf.MovieName = movie.MovieName;
+                        if ((mf.Part == null) || (mf.Part.Length == 0))
+                            mf.MovieName = movie.MovieName;
+                        else
+                            mf.MovieName = movie.MovieName + " (Part " + mf.Part + ")";
                         mf.Overview = movie.Overview.TrimEnd(new char[] { '\n' });
                         mf.Released = movie.Released;
                         mf.Rating = movie.Rating;
@@ -409,12 +413,22 @@ namespace BTVMediaEdit
         public string Actors = String.Empty;
         public DateTime Released = new DateTime(2000,1,1);
         public double Rating;
+        public string Part = String.Empty;
 
         public MovieFile(string path)
         {
             FullName = path;
             FileName = Path.GetFileName(path);
             MovieName = FileName.Remove(FileName.LastIndexOf('.')).Replace('_', ' ').Replace('.', ' ');
+            // check for partN,cdN,-DiscN
+            Match partMatch = Regex.Match(MovieName, "[pP]art[0-9]+|[cC][dD][0-9]+|-Disc[0-9]+");
+            if (partMatch.Success)
+            {
+                // get the number
+                Match partNumMatch = Regex.Match(partMatch.Groups[0].Value, "([0-9]+)");
+                Part = partNumMatch.Groups[0].Value;
+                MovieName = MovieName.Remove(MovieName.IndexOf(partMatch.Groups[0].Value)).TrimEnd(' ');
+            }
         }
 
         public PVSPropertyBag ToPVSPropertyBag()

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("foX004")]
 [assembly: AssemblyProduct("BTVMediaEdit")]
-[assembly: AssemblyCopyright("Copyright © foX004 2009")]
+[assembly: AssemblyCopyright("Copyright © foX004 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.1.6")]
+[assembly: AssemblyFileVersion("1.0.2.0")]
